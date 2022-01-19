@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+
+    <div id="player-container">
+
+        <header id="top-menu">
+           <h1>My Player</h1>
+        </header>
+
+
+        <div class="player-features-container">
+            <section id="player-body">
+
+
+                <div id="song-cover"></div>
+                <div id="audio-timing-bar" class="default-bar">
+                    <div id="filler-time-bar" class="filler-bar"></div>
+                </div>  
+                <div id="current-total-time">
+                    <span id="current-time">00:00</span>
+                    <span id="total-time">00:00</span>
+                </div>
+                <h2 id="song-title">Adventures</h2>
+                <p id="song-author">A Himitsu</p>  
+            </section>
+
+            <section id="audio-controls">
+
+                <div id="main-controls">
+                    <a href="#" id="repeat">
+                        <i class="fas fa-redo-alt"></i>
+                    </a>
+    
+                    <div id="back-play-next">
+                        <button id="backward">
+                            <i class="fas fa-step-backward"></i>
+                        </button>
+                        <button id="playpause">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="forward">
+                            <i class="fas fa-step-forward"></i>
+                        </button>
+                    </div>
+                    <a href="#" id="random">
+                        <i class="fas fa-random"></i>
+                    </a>
+                </div>
+                <div id="volume-controls">
+                    <a href="#" id="volume-down">
+                        <i class="fas fa-volume-down"></i>
+                    </a>
+                    <div id="volume-bar" class = "default-bar">
+                        <div id="filler-volume-bar" class="filler-bar" ></div>
+                    </div>
+                    <a href="#" id="volume-up">
+                        <i class="fas fa-volume-up"></i>
+                    </a>
+                </div>
+                </div>
+            </section>
+
+        </div>
+
+
+    </div>
+
+
+  
+    
+    <script src="app.js"></script>
+</body>
+</html>
